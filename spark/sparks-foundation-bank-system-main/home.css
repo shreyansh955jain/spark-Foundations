@@ -1,0 +1,267 @@
+/* font */
+@font-face {
+    font-family: CodaCaption-ExtraBold;
+    src: url(../fonts/CodaCaption-ExtraBold.ttf);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    
+    font-family: 'Oswald', sans-serif;
+}
+.carousel-item{
+   border-left-width: 100px;
+   border-right-width: 100px;
+}
+.para{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Righteous', cursive;
+}
+.img-src{
+    width: 1700px;
+    padding-left: none;
+    padding-right: none;
+    margin-left: none;
+    margin-right: none;
+
+    height: 600px;
+}
+/* body */
+body{
+    margin:0;
+    background-color: #97144d;
+}
+.uni-padding{
+    padding: 0 7%;
+    text-align: center;
+}
+
+/* navbar */
+#navbar{
+    background-color: #212529;
+    margin: 0px;
+    margin-bottom: 5px;
+    
+}
+#navbar ul li{
+    display: inline-block;
+    padding: 18px 0px;
+    padding-right: 35px;
+}
+#navbar ul{
+    margin:0;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* poster */
+#aboutBank{
+    color: #363636;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    text-decoration-style: solid;
+    padding-right: 300px;
+    padding-left: 300px;
+    font-size: 20px;
+    font-family: cursive;
+    backface-visibility: hidden;   
+}
+.h2_line{
+    display: inline;
+ text-decoration: underline;
+   position: relative;
+   color: rgb(255, 255, 255);
+   mix-blend-mode: difference;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#poster{
+    background-image: url("/images/bank.jpeg");
+    height: 200px;
+    margin-top: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+/* why us */
+#whysection{
+    overflow: auto;
+    margin-bottom: 50px;
+    
+}
+.red-heading{
+    color: #FFFF00;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+.section33{
+    width:33.33%;
+    float: left;
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+    box-sizing: border-box;
+}
+.section33 h2{
+    color: #FFFF00;
+}
+.section33 p{
+    color: #FFFFFF;   
+}
+.btn33{
+padding: 20px;
+margin: 10px;
+background-color: #4285F4;
+color: white;
+border: 0px;
+border-radius: 5px;
+font-weight: bold;
+letter-spacing: 1px;
+font-size: 20px;
+}
+
+
+
+
+/* footer */
+#imp-link{
+    background-color: #34A853;
+    color: white;
+    overflow: auto;
+    
+    
+}
+.div33{
+    width:33.33%;
+    letter-spacing: 1px;
+    float: left;
+    padding: 25px 50px;
+     box-sizing:border-box ;
+}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset:10px ;
+    text-decoration-thickness: 2px;
+}
+#footer-menu{
+    list-style-type: none;
+    padding : 0px;
+
+}
+#footer-menu li{
+padding-bottom: 10px;
+}
+#footer-menu a{
+    text-decoration: none;
+    color: white;
+}
+#footer-menu-container{
+  padding-left: 130px;  
+}
+#copyright{
+    background-color: #4285F4;
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+/* responsive ipad */
+@media only screen and (max-width :768px){
+    #navbar ul li {
+       padding-right: 30px;
+    }
+    .section70{
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+}
+/* responsive phone */
+@media only screen and (max-width :500px){
+    #logobar{
+        text-align: center;
+    }
+    #poster h1{
+        font-size: 28px;
+    }
+    .section33,.section70,.section30,.section50,.div33{
+        width: 100%;
+    }
+    .section70{
+        text-align: center;
+        padding: 0px;
+    }
+    .section30{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .section33 a{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .section50 h2{
+       text-align: center;
+       padding-right: 0px; 
+    }
+    .div33{
+        padding: 25px 20px;
+        text-align: center;
+    }
+    #footer-menu-container{
+        padding-left: 0px;
+    }
+}
+/* mobile menu */
+#navbar ul #mobile-cross,#mobile-bar{
+display: none;
+}
+
+@media only screen and (max-width :500px){
+    #navbar{
+        background-color: plum;
+        position: absolute;
+        top:0px;
+        height: 100vh;
+        width: 280px;
+        padding: 0px;
+    }
+    #navbar ul li{
+       display: block;
+       padding: 18px 0px;
+       padding-right: 35px;
+       border-bottom: 1px solid white;
+       padding-left: 20px;
+    }
+    
+    #mobile-cross{
+       text-align:right; 
+    }
+    .fa-circle-xmark{
+        font-size: 25px;
+    }
+    #navbar{
+        left:-280px;
+        transition: all 0.5s ease;
+    }
+    #mobile-bar{
+        background-color: plum;
+        color: white;
+        padding: 18px;
+        font-size: 28px;
+    }
+    #navbar ul #mobile-cross,#mobile-bar{
+        display: block;
+        }
+}
